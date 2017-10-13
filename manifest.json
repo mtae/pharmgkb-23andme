@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "PharmDNA",
+  "version": "1.0",
+
+  "description": "Adds genotype information to the PharmGKB website.",
+
+  "icons": {
+    "48": "icons/pharmdna-48.png",
+    "96": "icons/pharmdna-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://pharmgkb.org/*/*/variantAnnotation"],
+      "js": ["pharmdna.js"]
+    }
+  ]
+
+}
