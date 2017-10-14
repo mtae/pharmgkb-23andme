@@ -13,7 +13,7 @@
 
   "content_scripts": [
     {
-      "matches": ["*://www.pharmgkb.org/*/*/variantAnnotation"],
+      "matches": ["*://www.pharmgkb.org/*"],
       "js": ["pharmdna.js"]
     }
   ],
